@@ -1,0 +1,56 @@
+<!--pages/toplist/toplist.wxml-->
+<!-- 歌单需要用id请求getHomeTopPlaylist，这里就不处理了 -->
+<view>
+<view>
+  <view class="topHeader">
+      <text>榜单推荐</text>
+    </view>
+    <view class="picture" >
+    <view style="background-image: url({{item.coverImgUrl}});" class="pictureItem" wx:for="{{recommendList}}" wx:key="id"></view>
+    </view>
+</view>
+  <view>
+    <view class="topHeader">
+      <image src="/static/images/logo.png"></image>
+      <text>全部榜单</text>
+    </view>
+    <view class="topList">
+      <view class="swiperItem" wx:for="{{allTopList}}" wx:key="id">
+        <view class="itemHeader">
+          <text>{{item.name}}</text>
+          <text>{{item.updateFrequency}}</text>
+        </view>
+        <view class="listItem">
+          <view>
+            <image src="{{item.coverImgUrl}}"></image>
+          </view>
+          <view class="itemRight">
+            <view class="content">
+              <view class="conItem">
+                <view>1</view>
+                <view class="songName">
+                  <text>最伟大的作品</text>
+                </view>
+                <view style="color: yellow;">荐</view>
+              </view>
+              <view class="conItem">
+                <view>2</view>
+                <view class="songName">
+                  <text>长安</text>
+                </view>
+                <view style="color: greenyellow;">新</view>
+              </view>
+              <view class="conItem">
+                <view>3</view>
+                <view class="songName">
+                  <text>I Alway Online</text>
+                </view>
+                <view style="color: red;">热</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

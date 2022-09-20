@@ -1,0 +1,143 @@
+/* pages/search/search.wxss */
+/* 头部 */
+.header {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  line-height: 60rpx;
+  padding: 10rpx 0 10rpx 25rpx;
+}
+.searchInput {
+  position: relative;
+  height: 80rpx;
+  line-height: 80rpx;
+  flex: 1;
+  background: var(--backgroundColor);
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.searchInput input {
+  margin-left: 100rpx;
+  padding-left: 10rpx;
+  height: 80rpx;
+}
+.searchInput .iconfont {
+  font-size: 50rpx;
+}
+.placeholder {
+  font-size: 28rpx;
+}
+.toSearch {
+  width: 130rpx;
+  font-size: 42rpx;
+  color: var(--deepFontColor);
+  text-align: center;
+}
+.searchIcon {
+  position: absolute;
+  left: 40rpx;
+  font-size: 40rpx;
+}
+/* 热搜榜 */
+.searchSwiper{
+  height: 1900rpx;
+}
+.hotContainer{
+  width: 98%;
+  padding: 25rpx;
+}
+.hotList{
+  border-radius: 20rpx;
+}
+.hotTitle {
+  padding: 20rpx 0 20rpx 30rpx;
+  color: var(--deepFontColor);
+  border-bottom: 1rpx solid #f7e8e7;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.hotItem {
+  padding-left: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.hotItem:last-child{
+  padding-bottom: 110rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+.hotItem .order {
+  display: inline-block;
+  width: 50rpx;
+}
+.hotItem .iconImg {
+  width: 35rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+/* 搜索结果区域 */
+.searchContent {
+  color: rgb(147, 166, 229);
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid #d43c33;
+  padding: 0 25rpx;
+}
+.searchItem {
+  padding: 0 25rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+.searchItem .content {
+  flex: 1;
+  margin-left: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+/* 历史记录 */
+.history {
+  position: relative;
+  margin: 20rpx 0;
+  border-radius: 25rpx;
+}
+.history view{
+  background-color: var(--backgroundColor);
+}
+.hisHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rpx;
+  background-color: var(--backgroundColor);
+}
+.delete,.title,.hotTitle {
+  font-size: 36rpx;
+}
+.historyWord {
+  overflow: hidden;
+  padding: 0 25rpx 0 15rpx;
+}
+.history .historyItem{
+  float: left;
+  height: 60rpx;
+  padding: 0 20rpx;
+  margin: 10rpx 8rpx;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  background-color: var(--cardBackgroundColor);
+  max-width: 400rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 动态样式 */
+.hot{
+  color: var(--themeDeepColor);
+}
+.hotFont{
+  color: var(--deepFontColor);
+}
+
+

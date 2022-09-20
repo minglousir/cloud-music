@@ -1,0 +1,257 @@
+/* pages/index/index.wxss */
+/* 搜索 */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 60rpx;
+  margin-left: 10rpx;
+}
+
+.header image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 15rpx;
+}
+
+.header .search {
+  margin: 0 30rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: var(--backgroundColor);
+  flex: 1;
+}
+/* 轮播图 */
+.swiper {
+  height: 250rpx;
+  width: 100%;
+  padding: 25rpx 0 30rpx;
+}
+.swiper swiper-item {
+  padding: 0 25rpx;
+}
+.swiper-image {
+ border-radius: 20rpx;
+}
+/* 修改dot形状 */
+.swiper .wx-swiper-dot{
+  width: 24rpx;    
+  height: 6rpx;  
+  border-radius: 3rpx;  
+}
+/* 标签定位 */
+.bannerItem {
+  position: relative;
+  overflow: hidden;
+}
+.swiperText {
+  position: absolute;
+  color: #fff;
+  padding: 10rpx 20rpx;
+  bottom: 0;
+  right: 25rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+/* navtar */
+.navContainer{
+  display: flex;
+  padding: 0 5rpx 30rpx;
+}
+
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+/* icon */
+.navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: var(--iconBackgroundColor);
+  font-size: 50rpx;
+  color: #fff;
+  margin: 8rpx 0;
+}
+
+.navItem text{
+  font-size: 26rpx;
+}
+/* 推荐歌曲 */
+.recommendContainer{
+  padding: 25rpx;
+  margin-top: 3rpx;
+  border-bottom-right-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+}
+/* 内容推荐区 */
+.recommendScroll{
+  display: flex;
+  height: 300rpx;
+}
+
+.scrollItem{
+  position: relative;
+  width: 200rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.playCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 5rpx;
+  color: #fff!important;
+  background-color: rgb(231, 221, 221,0.4);
+  border-radius: 10rpx;
+  font-size: 20rpx;
+}
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+.scrollItem text{
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--deepFontColor);
+}
+/* 排行榜 */
+.topList{
+  margin-top: 20rpx;
+  padding: 25rpx;
+  border-radius: 30rpx;
+}
+.topListSwiper{
+  margin-top: 30rpx;
+  height: 600rpx;
+}
+.item {
+  width: 635rpx!important;
+}
+.swiperItem{
+  width: 95%;
+  border-radius: 20rpx;
+  overflow: hidden;
+  border: 1px solid var(--backgroundColor);
+  padding: 20rpx;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70rpx;
+  margin-top: 30rpx;
+}
+.itemHeader text:nth-child(1){
+  font-size: 50rpx;
+  line-height: 50rpx;
+  color: var(--deepFontColor);
+}
+.itemHeader text:nth-child(2){
+  font-size: 32rpx;
+  width: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.itemHeader text:nth-child(1)::after{
+  content: '';
+  display: inline-block;
+  width: 22rpx;
+  height: 22rpx;
+  border-top: 2rpx solid var(--deepFontColor);
+  border-right: 2rpx solid var(--deepFontColor);
+  transform: rotate(45deg);
+  margin: 3rpx;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.listItem image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.itemRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemRight>view:nth-child(1) {
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.itemRight>view:nth-child(2) {
+  flex: 1;
+  padding: 0 20rpx;
+}
+.itemRight>view:nth-child(3) {
+  width: 68rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: var(--themeColor);
+  background-color: #ffeded;
+  border-radius: 5rpx;
+}
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+.content .songName {
+  font-size: 32rpx;
+  color: var(--deepFontColor);
+}
+.content .name {
+  font-size: 24rpx;
+
+}
+.content>view{
+  width: 280rpx;
+  padding: 10rpx 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 底部 */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+}
+.dis {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  padding:0 20rpx;
+  border-radius: 25rpx;
+  border: 1px solid var(--deepFontColor);
+}

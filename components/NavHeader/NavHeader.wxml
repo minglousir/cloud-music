@@ -1,0 +1,7 @@
+<!--components/NavHeader/NavHeader.wxml-->
+<view class="header">
+  <text class="title">{{title}}</text>
+  <view>
+    <text class="btn" bindtap="toPage">{{nav}}</text>
+  </view>
+</view>

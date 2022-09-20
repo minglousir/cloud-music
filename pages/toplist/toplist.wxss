@@ -1,0 +1,115 @@
+/* pages/toplist/toplist.wxss */
+.topHeader {
+  padding: 0 25rpx;
+  background-color: var(--backgroundColor);
+  font-size: 36rpx;
+  color: var(--deepFontColor);
+  margin-top: 50rpx;
+}
+.topHeader image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: top;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+/* 排行榜 */
+.topList{
+  padding: 25rpx;
+  background-color: var(--backgroundColor);
+}
+.picture {
+  display: flex;
+  padding: 0 25rpx;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--backgroundColor);
+
+}
+.pictureItem {
+  width: 30%;
+  height: 200rpx;
+  border-radius: 25rpx;
+  background: no-repeat center ;
+  background-size:100% 100%;
+  margin-top: 30rpx;
+}
+/* .pictureItem:nth-child(2n){
+  margin: 0 20px;
+} */
+
+.item {
+  width: 635rpx!important;
+}
+.swiperItem{
+  margin-bottom: 20rpx;
+  width: 100%;
+  border-radius: 20rpx;
+  overflow: hidden;
+  border: 1px solid var(--backgroundColor);
+  padding: 30rpx;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70rpx;
+  margin-top: 10rpx;
+}
+.itemHeader text:nth-child(1){
+  font-size: 50rpx;
+  line-height: 50rpx;
+  color: var(--deepFontColor);
+  max-width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.itemHeader text:nth-child(2){
+  font-size: 26rpx;
+  max-width: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.listItem image {
+  width: 180rpx;
+  height: 180rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.itemRight {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.conItem>view:nth-child(1) {
+  font-weight: 600;
+  font-size: 36rpx;
+  color: var(--themeDeepColor);
+}
+
+.conItem>view{
+  padding: 8rpx 10rpx 8rpx 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conItem {
+  width: 460rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.songName {
+  flex: 1;
+  font-size: 34rpx;
+  color: var(--deepFontColor);
+}
+

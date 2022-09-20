@@ -1,0 +1,50 @@
+@import '/static/iconfont/iconfont.wxss';
+
+/* 初始化标签,并指定盒子模型 */
+page,
+view,
+text,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* page 以浅色系为设计主题色,只要设置这里就会整体色调的式风格,和一定程度是设置好普通文本的大小*/
+page {
+  /* 主题色,主题色一般会应用在一些经典页面和某些经典按钮,文字颜色等 */
+  /* 主要方便后期制作换肤 */
+  --themeDeepColor: #dd2d1e;
+  --themeColor: #eb2d21;
+  --iconFontColor: #ffffff;
+  --iconBackgroundColor: #eb2d21;
+  --backgroundColor: #eeedeb;
+  --cardBackgroundColor: #ffffff;
+  --deepFontColor: #343434;
+  --fontColor: #5a5a5a;
+  /* 默认设置 */
+  color: var(--fontColor);
+  background-color: var(--backgroundColor);
+  font-size: 28rpx;
+  height: 100%;
+}
+/* view */
+view>view{
+  background-color: var(--cardBackgroundColor);
+}
+
+/* 去除滚动条 */
+::-webkit-scrollbar{
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* image */
+image {
+  height: 100%;
+  width: 100%;
+}
