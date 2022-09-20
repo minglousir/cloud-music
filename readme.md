@@ -1,2 +1,2 @@
 # You just need to download the file and you can run it directly
-#在这里，我提供一个在无法使用手机号登录的情况下获得cookies和userinfo的方法。你可以直接打开网易云的官网，使用账号密码登录。不过在这之前你要先打开控制台，点击到xhr选项卡，然后再登录账号，这是网页会发送请求，注意此时会有一个报文名为cellphone的报文，点击该报文，里面就是你要的登录消息，你将登录的data数据copy下来放到status/userinfo/userinfo.js下，已经设置好动态获取，你也可以通过，mock方式获取。此外，由于cookie不是在data里面的，你需要查看里面的报文信息，里面cookies选项，里面有多个cookie，你只需要将MUSIC_IU这个cookie拿下来就够用了。userinfo.js的格式已经提供，具体个人信息已经删除。
+#在这里，我提供一个在无法使用手机号登录的情况下获得cookies和userinfo的方法。你可以直接打开网易云的官网，使用账号密码登录。不过在这之前你要先打开控制台，点击到xhr选项卡，然后再登录账号，这是网页会发送请求，注意此时会有一个报文名为cellphone的报文，点击该报文，里面就是你要的登录消息，你将登录的data数据copy下来放到status/userinfo/userinfo.js下，已经设置好动态获取，你也可以通过，mock方式获取。此外，由于cookie不是在data里面的，你需要查看里面的报文信息，里面cookies选项，里面有多个cookie，你只需要将MUSIC_IU这个cookie拿下来就够用了。userinfo.js的格式已经提供，具体个人信息已经删除。此项目仅用于学习交流！！！
